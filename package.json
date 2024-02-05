@@ -1,5 +1,13 @@
 {
   "name": "root",
+  "authors": [
+    "rendianmeng <ren150426@163.com>"
+  ],
+  "scripts": {
+    "start:site": "cd ./packages/site && pnpm start",
+    "build:site": "rm -r -f ./site && cd ./packages/site && pnpm doc:build",
+    "deploy:site": "pnpm build:site && sh ./scripts/deploy-site.sh"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {

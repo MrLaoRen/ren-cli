@@ -1,0 +1,17 @@
+{
+  "name": "ren-cli-site",
+  "version": "0.0.1",
+  "description": "A static site based on ren-cli",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "dumi dev",
+    "doc:build": "dumi build && mv ./site ../../"
+  },
+  "authors": [
+    "rendianmeng <ren150426@163.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "dumi": "^2.2.13"
+  }
+}
